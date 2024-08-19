@@ -1,0 +1,1211 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Mascot xmlns="http://www.group-finity.com/Mascot" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.group-finity.com/Mascot Mascot.xsd">
+
+	<ActionList>
+		<Action Name="Look" Type="Embedded" Class="com.group_finity.mascot.action.Look" />
+		<Action Name="Offset" Type="Embedded" Class="com.group_finity.mascot.action.Offset" />
+
+		<!-- Standing -->
+
+		<Action Name="Stand" Type="Stay" BorderType="Floor">
+			<Animation>
+				<Pose Image="/shime1-2.png" ImageRight="/shime1-2r.png" ImageAnchor="102,198" Velocity="0,0" Duration="350" />
+				<Pose Image="/shime1-3.png" ImageRight="/shime1-3r.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/open_box.wav" Volume="1" />
+				<Pose Image="/shime1-4.png" ImageRight="/shime1-4r.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime1-5.png" ImageRight="/shime1-5r.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime1-5.png" ImageRight="/shime1-5r.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/hello.wav" Volume="1" />
+				<Pose Image="/shime1-5.png" ImageRight="/shime1-5r.png" ImageAnchor="102,198" Velocity="0,0" Duration="50" />
+				<Pose Image="/shime1-4.png" ImageRight="/shime1-4r.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/close_box.wav" Volume="1"/>
+				<Pose Image="/shime1-3.png" ImageRight="/shime1-3r.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime1-2.png" ImageRight="/shime1-2r.png" ImageAnchor="102,198" Velocity="0,0" Duration="10000" />
+			</Animation>
+		</Action>
+
+		<Action Name="Walk" Type="Move" BorderType="Floor">
+			<Animation>
+				<Pose Image="/shime2.png" ImageAnchor="102,198" Velocity="-2,0" Duration="6" />
+				<Pose Image="/shime3-3.png" ImageAnchor="102,198" Velocity="-2,0" Duration="2" />
+				<Pose Image="/shime3-3.png" ImageAnchor="102,198" Velocity="-2,0" Duration="6" Sound="/walk.wav" Volume="1"/>
+				<Pose Image="/shime3-2.png" ImageAnchor="102,198" Velocity="-2,0" Duration="6" />
+				<Pose Image="/shime3-3.png" ImageAnchor="102,198" Velocity="-2,0" Duration="6" />
+			</Animation>
+		</Action>
+
+		<Action Name="Run" Type="Move" BorderType="Floor">
+			<Animation>
+				<Pose Image="/shime2.png" ImageAnchor="102,198" Velocity="-8,0" Duration="2" />
+				<Pose Image="/shime3.png" ImageAnchor="102,198" Velocity="-8,0" Duration="2" Sound="/run.wav" Volume="1" />
+				<Pose Image="/shime3-2.png" ImageAnchor="102,198" Velocity="-8,0" Duration="2" />
+				<Pose Image="/shime3-3.png" ImageAnchor="102,198" Velocity="-8,0" Duration="2" />
+			</Animation>
+		</Action>
+
+		<Action Name="Dash" Type="Move" BorderType="Floor">
+			<Animation>
+				<Pose Image="/shime2.png" ImageAnchor="102,198" Velocity="-14,0" Duration="2" />
+				<Pose Image="/shime3.png" ImageAnchor="102,198" Velocity="-14,0" Duration="2" Sound="/dash.wav" Volume="1" />
+				<Pose Image="/shime3-2.png" ImageAnchor="102,198" Velocity="-14,0" Duration="2" />
+				<Pose Image="/shime3-3.png" ImageAnchor="102,198" Velocity="-14,0" Duration="2" />
+			</Animation>
+		</Action>
+
+		<Action Name="Stop" Type="Animate" BorderType="Floor">
+			<Animation>
+				<Pose Image="/shime2.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/climb.wav" Volume="1" />
+			</Animation>
+		</Action>
+		
+		<Action Name="GrabKinito" Type="Animate" Class="com.group_finity.mascot.action.Dragged">
+			<Animation>
+				<Pose Image="/shime5.png" ImageAnchor="96,198" Velocity="0,0" Duration="1" Sound="/grab.wav" Volume="1" />
+			</Animation>
+		</Action>
+
+		<Action Name="ChaseTheMouse" Type="Move" BorderType="Floor">
+			<Animation>
+				<Pose Image="/shime50.png" ImageAnchor="102,198" Velocity="-14,0" Duration="2" />
+				<Pose Image="/shime51.png" ImageAnchor="102,198" Velocity="-14,0" Duration="2" Sound="/dash.wav" Volume="1" />
+				<Pose Image="/shime52.png" ImageAnchor="102,198" Velocity="-14,0" Duration="2" />
+				<Pose Image="/shime53.png" ImageAnchor="102,198" Velocity="-14,0" Duration="2" />
+			</Animation>
+		</Action>
+
+		<Action Name="GiveAccess" Type="Animate" BorderType="Floor" Draggable="false">
+			<Animation>
+				<Pose Image="/shime58.png" ImageAnchor="496,933" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime59.png" ImageAnchor="496,933" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime60.png" ImageAnchor="496,933" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime61.png" ImageAnchor="496,933" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime62.png" ImageAnchor="496,933" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime63.png" ImageAnchor="496,933" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime64.png" ImageAnchor="496,933" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime65.png" ImageAnchor="496,933" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime66.png" ImageAnchor="496,933" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime67.png" ImageAnchor="496,933" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime68.png" ImageAnchor="496,933" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime69.png" ImageAnchor="496,933" Velocity="0,0" Duration="1" Sound="/open_box.wav" Volume="1" />
+				<Pose Image="/shime70.png" ImageAnchor="496,933" Velocity="0,0" Duration="15" />
+				<Pose Image="/shime71.png" ImageAnchor="496,933" Velocity="0,0" Duration="15" Sound="/permissions.wav" Volume="1" />
+				<Pose Image="/shime70.png" ImageAnchor="496,933" Velocity="0,0" Duration="15" />
+				<Pose Image="/shime71.png" ImageAnchor="496,933" Velocity="0,0" Duration="15" />
+				<Pose Image="/shime70.png" ImageAnchor="496,933" Velocity="0,0" Duration="15" />
+				<Pose Image="/shime71.png" ImageAnchor="496,933" Velocity="0,0" Duration="15" />
+				<Pose Image="/shime70.png" ImageAnchor="496,933" Velocity="0,0" Duration="15" />
+				<Pose Image="/shime71.png" ImageAnchor="496,933" Velocity="0,0" Duration="15" />
+				<Pose Image="/shime70.png" ImageAnchor="496,933" Velocity="0,0" Duration="15" />
+				<Pose Image="/shime71.png" ImageAnchor="496,933" Velocity="0,0" Duration="15" />
+				<Pose Image="/shime70.png" ImageAnchor="496,933" Velocity="0,0" Duration="15" />
+				<Pose Image="/shime71.png" ImageAnchor="496,933" Velocity="0,0" Duration="15" />
+				<Pose Image="/shime70.png" ImageAnchor="496,933" Velocity="0,0" Duration="15" />
+				<Pose Image="/shime71.png" ImageAnchor="496,933" Velocity="0,0" Duration="15" />
+
+				<Hotspot Shape="Rectangle" Origin="944,144" Size="45,30" Behavior="CloseCMD" />
+			</Animation>
+		</Action>
+
+		<Action Name="KinitoAsksForYourDay" Type="Animate" BorderType="Floor">
+		    <Animation>
+		        <Pose Image="/shime101.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/open_box.wav" Volume="1" />
+		        <Pose Image="/shime102.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+		        <Pose Image="/shime103.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/day.wav" Volume="1"/>
+		        <Pose Image="/shime103.png" ImageAnchor="102,198" Velocity="0,0" Duration="50" />
+		        <Pose Image="/shime104.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+		        <Pose Image="/shime105.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+		        <Pose Image="/shime106.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+		    </Animation>
+		</Action>
+
+		<Action Name="AnswerHowYourDayWas" Type="Stay" BorderType="Floor">
+		    <Animation>
+		        <Pose Image="/shime106.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+
+				<Hotspot Shape="Rectangle" Origin="11,35" Size="56,29" Behavior="DayWasGood" />
+				<Hotspot Shape="Rectangle" Origin="129,35" Size="56,29" Behavior="DayWasBad" />
+				<Hotspot Shape="Rectangle" Origin="70,35" Size="56,29" Behavior="DayWasMeh" />
+		    </Animation>
+		</Action>
+
+		<Action Name="DayGood" Type="Animate" BorderType="Floor">
+		    <Animation>
+		        <Pose Image="/shime107.png" ImageAnchor="102,226" Velocity="0,0" Duration="1" Sound="/open_box.wav" Volume="1" />
+				<Pose Image="/shime107.png" ImageAnchor="102,226" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime108.png" ImageAnchor="102,226" Velocity="0,0" Duration="1" Sound="/good.wav" Volume="1" />
+				<Pose Image="/shime108.png" ImageAnchor="102,226" Velocity="0,0" Duration="40" />
+		        <Pose Image="/shime109.png" ImageAnchor="102,226" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime110.png" ImageAnchor="102,226" Velocity="0,0" Duration="80" />
+				<Pose Image="/shime111.png" ImageAnchor="102,226" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime112.png" ImageAnchor="102,226" Velocity="0,0" Duration="1" Sound="/too.wav" Volume="1" />
+				<Pose Image="/shime112.png" ImageAnchor="102,226" Velocity="0,0" Duration="50" />
+				<Pose Image="/shime113.png" ImageAnchor="102,226" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime114.png" ImageAnchor="102,226" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime113.png" ImageAnchor="102,226" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime112.png" ImageAnchor="102,226" Velocity="0,0" Duration="20" />
+				<Pose Image="/shime115.png" ImageAnchor="102,226" Velocity="0,0" Duration="2" Sound="/close_box.wav" Volume="1"/>
+				<Pose Image="/shime1-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="10" />
+		    </Animation>
+		</Action>
+
+		<Action Name="DayBad" Type="Animate" BorderType="Floor">
+		    <Animation>
+		        <Pose Image="/shime116.png" ImageAnchor="102,226" Velocity="0,0" Duration="1" Sound="/open_box.wav" Volume="1" />
+				<Pose Image="/shime116.png" ImageAnchor="102,226" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime117.png" ImageAnchor="102,226" Velocity="0,0" Duration="1" Sound="/shame.wav" Volume="1" />
+				<Pose Image="/shime117.png" ImageAnchor="102,226" Velocity="0,0" Duration="50" />
+		        <Pose Image="/shime118.png" ImageAnchor="102,226" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime119.png" ImageAnchor="102,226" Velocity="0,0" Duration="1" Sound="/better.wav" Volume="1"/>
+				<Pose Image="/shime119.png" ImageAnchor="102,226" Velocity="0,0" Duration="110" />
+				<Pose Image="/shime120.png" ImageAnchor="102,226" Velocity="0,0" Duration="2" Sound="/close_box.wav" Volume="1"/>
+				<Pose Image="/shime1-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="10" />
+		    </Animation>
+		</Action>
+
+		<Action Name="DayMeh" Type="Animate" BorderType="Floor">
+		    <Animation>
+		        <Pose Image="/shime121.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/open_box.wav" Volume="1" />
+				<Pose Image="/shime121.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime122.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/uh.wav" Volume="1" />
+				<Pose Image="/shime122.png" ImageAnchor="102,198" Velocity="0,0" Duration="60" />
+		        <Pose Image="/shime123.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime124.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/boring.wav" Volume="1"/>
+				<Pose Image="/shime124.png" ImageAnchor="102,198" Velocity="0,0" Duration="80" />
+				<Pose Image="/shime125.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/close_box.wav" Volume="1"/>
+				<Pose Image="/shime1-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="10" />
+		    </Animation>
+		</Action>
+
+		<Action Name="KinitoWaitsForAccess" Type="Stay" BorderType="Floor" Draggable="false">
+			<Animation>
+				<Pose Image="/shime70.png" ImageAnchor="496,933" Velocity="0,0" Duration="15" />
+				<Pose Image="/shime71.png" ImageAnchor="496,933" Velocity="0,0" Duration="15" />
+
+				<Hotspot Shape="Rectangle" Origin="944,144" Size="45,30" Behavior="CloseCMD" />
+			</Animation>
+		</Action>
+
+		<Action Name="NoAccess" Type="Animate" BorderType="Floor">
+			<Animation>
+				<Pose Image="/shime72.png" ImageRight="/shime72.png" ImageAnchor="496,933" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime73.png" ImageRight="/shime73.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/oh.wav" Volume="1" />
+				<Pose Image="/shime74.png" ImageRight="/shime74.png" ImageAnchor="102,198" Velocity="0,0" Duration="150" />
+				<Pose Image="/shime73.png" ImageRight="/shime73.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime1-2.png" ImageRight="/shime1-2r.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime75.png" ImageRight="/shime75.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/open_box.wav" Volume="1" />
+				<Pose Image="/shime76.png" ImageRight="/shime76.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime77.png" ImageRight="/shime77.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/okay.wav" Volume="1" />
+				<Pose Image="/shime77.png" ImageRight="/shime77.png" ImageAnchor="102,198" Velocity="0,0" Duration="40" />
+				<Pose Image="/shime76.png" ImageRight="/shime76.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/close_box.wav" Volume="1" />
+				<Pose Image="/shime75.png" ImageRight="/shime75.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime1-2.png" ImageRight="/shime1-2r.png" ImageAnchor="102,198" Velocity="0,0" Duration="10" />
+			</Animation>
+		</Action>
+
+		<!-- Sitting -->
+
+		<Action Name="Sit" Type="Stay" BorderType="Floor">
+			<Animation>
+				<Pose Image="/shime11.png" ImageAnchor="96,198" Velocity="0,0" Duration="250" />
+				<Pose Image="/shime11-2.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-3.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-2.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11.png" ImageAnchor="96,198" Velocity="0,0" Duration="150" />
+				<Pose Image="/shime11-2.png" ImageAnchor="96,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime11-3.png" ImageAnchor="96,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime11-2.png" ImageAnchor="96,198" Velocity="0,0" Duration="3" />
+				
+				<Hotspot Shape="Ellipse" Origin="61,117" Size="68,27" Behavior="SitDownBlush" />
+			</Animation>
+		</Action>
+
+		<Action Name="SitBlush" Type="Animate" BorderType="Floor">
+			<Animation>
+				<Pose Image="/shime11-9.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-10.png" ImageAnchor="96,198" Velocity="0,0" Duration="1" Sound="/open_box.wav" Volume="1" />
+				<Pose Image="/shime11-10.png" ImageAnchor="96,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime11-4.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-5.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-6.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-5.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-4.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-5.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-6.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-5.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-4.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-5.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-6.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-7.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-8.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-7.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-6.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-5.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-4.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-5.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-6.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-5.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-4.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-5.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-6.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-5.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-6.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime11-10.png" ImageAnchor="96,198" Velocity="0,0" Duration="1" Sound="/close_box.wav" Volume="1" />
+				<Pose Image="/shime11-9.png" ImageAnchor="96,198" Velocity="0,0" Duration="2" />
+
+				<Hotspot Shape="Ellipse" Origin="61,117" Size="68,27" Behavior="SitDownBlush" />
+			</Animation>
+		</Action>
+
+		<Action Name="SitAndLookAtMouse" Type="Stay" BorderType="Floor">
+			<Animation Condition="#{mascot.environment.cursor.y &lt; mascot.environment.screen.height/2}">
+				<Pose Image="/shime47.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+			</Animation>
+			<Animation>
+				<Pose Image="/shime47.png" ImageAnchor="96,198" Velocity="0,0" Duration="6" />
+			</Animation>
+		</Action>
+
+		<Action Name="Showtime" Type="Animate" BorderType="Floor">
+			<Animation>
+				<Pose Image="/shime78.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime79.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime80.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime81.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime82.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime83.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/throw.wav" Volume="1" />
+				<Pose Image="/shime84.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime83.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/throw.wav" Volume="1" />
+				<Pose Image="/shime84.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime83.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/throw.wav" Volume="1" />
+				<Pose Image="/shime84.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime83.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/throw.wav" Volume="1" />
+				<Pose Image="/shime84.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime83.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/throw.wav" Volume="1" />
+				<Pose Image="/shime84.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime83.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/throw.wav" Volume="1" />
+				<Pose Image="/shime84.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime83.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/throw.wav" Volume="1" />
+				<Pose Image="/shime84.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime83.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/throw.wav" Volume="1" />
+				<Pose Image="/shime84.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime83.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/throw.wav" Volume="1" />
+				<Pose Image="/shime84.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime83.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/throw.wav" Volume="1" />
+				<Pose Image="/shime84.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime83.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/throw.wav" Volume="1" />
+				<Pose Image="/shime84.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime83.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/throw.wav" Volume="1" />
+				<Pose Image="/shime84.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime83.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/throw.wav" Volume="1" />
+				<Pose Image="/shime84.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime83.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/throw.wav" Volume="1" />
+				<Pose Image="/shime84.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime83.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/throw.wav" Volume="1" />
+				<Pose Image="/shime85.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/shine.wav" Volume="1" />
+				<Pose Image="/shime85.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime86.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime80.png" ImageAnchor="102,198" Velocity="0,0" Duration="10" />
+			</Animation>
+		</Action>
+
+		<Action Name="SitWithLegsUp" Type="Stay" BorderType="Floor">
+			<Animation>
+				<Pose Image="/shime30.png" ImageAnchor="94,112" Velocity="0,0" Duration="1" Sound="/climb.wav" Volume="1" />
+				<Pose Image="/shime30.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-3.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-3.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-3.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-3.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-3.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-3.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+			</Animation>
+		</Action>
+
+		<Action Name="SitWithLegsDown" Type="Stay" BorderType="Floor">
+			<Animation>
+				<Pose Image="/shime30.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-3.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-3.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-3.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-3.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-3.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-3.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+			</Animation>
+		</Action>
+
+		<Action Name="SitWhileDangLegs" Type="Stay" BorderType="Floor">
+			<Animation>
+				<Pose Image="/shime31.png" ImageAnchor="94,112" Velocity="0,0" Duration="2" Sound="/book.wav" Volume="1" />
+				<Pose Image="/shime32.png" ImageAnchor="94,112" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime33.png" ImageAnchor="94,112" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime30.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-3.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime30-2.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+			    <Pose Image="/shime30.png" ImageAnchor="94,112" Velocity="0,0" Duration="10" />
+			</Animation>
+		</Action>
+
+		<!-- Laying -->
+
+		<Action Name="Lay" Type="Stay" BorderType="Floor">
+			<Animation>
+				<Pose Image="/shime20.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/climb.wav" Volume="1" />
+				<Pose Image="/shime20.png" ImageAnchor="102,198" Velocity="0,0" Duration="250" />
+			</Animation>
+		</Action>
+		
+		<Action Name="Sprawl" Type="Stay" BorderType="Floor">
+			<Animation>
+				<Pose Image="/shime26.png" ImageAnchor="102,198" Velocity="0,0" Duration="14" />
+				<Pose Image="/shime26-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="14" />
+				<Pose Image="/shime26-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/poof.wav" Volume="1" />
+				<Pose Image="/shime26-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime26-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="14" />
+				<Pose Image="/shime26.png" ImageAnchor="102,198" Velocity="0,0" Duration="14" />
+				<Pose Image="/shime26-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="14" />
+				<Pose Image="/shime26-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/poof.wav" Volume="1" />
+				<Pose Image="/shime26-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime26-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="14" />
+				<Pose Image="/shime26.png" ImageAnchor="102,198" Velocity="0,0" Duration="14" />
+				<Pose Image="/shime26-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="14" />
+				<Pose Image="/shime26-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/poof.wav" Volume="1" />
+				<Pose Image="/shime26-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime26-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="14" />								
+				<Pose Image="/shime15.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime15-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime15-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/poof.wav" Volume="1" />
+				<Pose Image="/shime15-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="12" />
+				<Pose Image="/shime15-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime27.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime27-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime27-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/poof.wav" Volume="1" />
+				<Pose Image="/shime27-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="12" />
+				<Pose Image="/shime27-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime16.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime16-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime16-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/poof.wav" Volume="1" />
+				<Pose Image="/shime16-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="12" />
+				<Pose Image="/shime16-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime28.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime28-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime28-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/poof.wav" Volume="1" />
+				<Pose Image="/shime28-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="12" />
+				<Pose Image="/shime28-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime17.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime17-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime17-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/poof.wav" Volume="1"/>
+				<Pose Image="/shime17-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="12" />
+				<Pose Image="/shime17-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime29.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime29-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime29-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/poof.wav" Volume="1" />
+				<Pose Image="/shime29-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="12" />
+				<Pose Image="/shime29-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime29.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime29-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+				<Pose Image="/shime29-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/poof.wav" Volume="1" />
+				<Pose Image="/shime29-3.png" ImageAnchor="102,198" Velocity="0,0" Duration="12" />
+				<Pose Image="/shime29-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="13" />
+			</Animation>
+		</Action>
+
+		<Action Name="Ad" Type="Animate" BorderType="Floor">
+			<Animation>
+				<Pose Image="/shime54.png" ImageAnchor="156,198" Velocity="0,0" Duration="1" Sound="/chimes.wav" Volume="-1" />
+				<Pose Image="/shime55.png" ImageAnchor="156,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime56.png" ImageAnchor="156,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime57.png" ImageAnchor="156,198" Velocity="0,0" Duration="500" />
+				<Pose Image="/shime56.png" ImageAnchor="156,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime55.png" ImageAnchor="156,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime54.png" ImageAnchor="156,198" Velocity="0,0" Duration="1" />
+
+				<Hotspot Shape="Rectangle" Origin="7,149" Size="155,42" Behavior="KinitoPetURL" />
+				<Hotspot Shape="Rectangle" Origin="282,5" Size="22,22" Behavior="CloseWindow" />
+			</Animation>
+		</Action>
+
+		<Action Name="KinitoURL" Type="Animate" BorderType="Floor">
+		    <Animation>
+			    <Pose Image="/shime57.png" ImageAnchor="156,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime56.png" ImageAnchor="156,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime55.png" ImageAnchor="156,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime54.png" ImageAnchor="156,198" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+
+		<Action Name="NoAd" Type="Animate" BorderType="Floor">
+		    <Animation>
+				<Pose Image="/shime56.png" ImageAnchor="156,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime55.png" ImageAnchor="156,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime54.png" ImageAnchor="156,198" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+
+		<!-- Ceiling -->
+
+		<Action Name="GrabCeiling" Type="Stay" BorderType="Ceiling">
+			<Animation>
+				<Pose Image="/shime23.png" ImageAnchor="64,48" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime24.png" ImageAnchor="64,48" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime25.png" ImageAnchor="64,48" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime24.png" ImageAnchor="64,48" Velocity="0,0" Duration="6" />
+			</Animation>
+		</Action>
+		
+		<Action Name="ClimbCeiling" Type="Move" BorderType="Ceiling">
+			<Animation>
+				<Pose Image="/shime23.png" ImageAnchor="64,48" Velocity="-2,0" Duration="6" />
+				<Pose Image="/shime24.png" ImageAnchor="64,48" Velocity="-1,0" Duration="6" />
+				<Pose Image="/shime25.png" ImageAnchor="64,48" Velocity="0,0" Duration="6"  Sound="/poof.wav" Volume="1"/>
+				<Pose Image="/shime24.png" ImageAnchor="64,48" Velocity="-1,0" Duration="6" />
+			</Animation>
+		</Action>
+
+		<!-- Wall -->
+
+		<Action Name="GrabWall" Type="Stay" BorderType="Wall">
+			<Animation>
+				<Pose Image="/shime12.png" ImageAnchor="10,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime13.png" ImageAnchor="10,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime14.png" ImageAnchor="10,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime13.png" ImageAnchor="10,198" Velocity="0,0" Duration="6" />
+			</Animation>
+		</Action>
+		<Action Name="ClimbWall" Type="Move" BorderType="Wall">
+			<Animation Condition="#{TargetY &lt; mascot.anchor.y}">
+				<Pose Image="/shime12.png" ImageAnchor="10,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime13.png" ImageAnchor="10,198" Velocity="0,-1" Duration="6" />
+				<Pose Image="/shime14.png" ImageAnchor="10,198" Velocity="0,-2" Duration="6" Sound="/poof.wav" Volume="1"/>
+				<Pose Image="/shime13.png" ImageAnchor="10,198" Velocity="0,-1" Duration="6" />
+			</Animation>
+
+			<Animation Condition="#{TargetY &gt;= mascot.anchor.y}">
+				<Pose Image="/shime12.png" ImageAnchor="10,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime13.png" ImageAnchor="10,198" Velocity="0,-1" Duration="6" />
+				<Pose Image="/shime14.png" ImageAnchor="10,198" Velocity="0,-2" Duration="6" Sound="/poof.wav" Volume="1"/>
+				<Pose Image="/shime13.png" ImageAnchor="10,198" Velocity="0,-1" Duration="6" />
+			</Animation>
+		</Action>
+
+		<!-- IE -->
+
+		<Action Name="FallWithIe" Type="Embedded" Class="com.group_finity.mascot.action.FallWithIE"
+			 IeOffsetX="0" IeOffsetY="-64">
+			<Animation>
+				<Pose Image="/shime36.png" ImageAnchor="64,198" Velocity="0,0" Duration="1" Sound="/fall.wav" Volume="1" />
+				<Pose Image="/shime36.png" ImageAnchor="64,198" Velocity="0,0" Duration="250" />
+			</Animation>
+		</Action>
+		<Action Name="WalkWithIe" BorderType="Floor" Type="Embedded" Class="com.group_finity.mascot.action.WalkWithIE"
+			 IeOffsetX="0" IeOffsetY="-64">
+			<Animation>
+				<Pose Image="/shime34.png" ImageAnchor="64,198" Velocity="-2,0" Duration="6" />
+				<Pose Image="/shime36-2.png" ImageAnchor="64,198" Velocity="-2,0" Duration="2" Sound="/walk.wav" Volume="1" />
+				<Pose Image="/shime36-2.png" ImageAnchor="64,198" Velocity="-2,0" Duration="6" />
+				<Pose Image="/shime36.png" ImageAnchor="64,198" Velocity="-2,0" Duration="6" />
+				<Pose Image="/shime36-2.png" ImageAnchor="64,198" Velocity="-2,0" Duration="6" />
+			</Animation>
+		</Action>
+		<Action Name="RunWithIe" BorderType="Floor" Type="Embedded" Class="com.group_finity.mascot.action.WalkWithIE"
+			 IeOffsetX="0" IeOffsetY="-64">
+			<Animation>
+				<Pose Image="/shime34.png" ImageAnchor="64,198" Velocity="-8,0" Duration="2" />
+				<Pose Image="/shime35.png" ImageAnchor="64,198" Velocity="-8,0" Duration="2" Sound="/run.wav" Volume="1" />
+				<Pose Image="/shime36.png" ImageAnchor="64,198" Velocity="-8,0" Duration="2" />
+				<Pose Image="/shime36-2.png" ImageAnchor="64,198" Velocity="-8,0" Duration="2" />
+			</Animation>
+		</Action>
+		<Action Name="ThrowIe" BorderType="Floor" Type="Embedded" Class="com.group_finity.mascot.action.ThrowIE"
+			InitialVX="32" InitialVY="-10" Gravity="0.5">
+			<Animation>
+				<Pose Image="/shime37.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" Sound="/throw.wav" Volume="1" />
+				<Pose Image="/shime37.png" ImageAnchor="102,198" Velocity="0,0" Duration="40" />
+			</Animation>
+		</Action>
+
+		<!-- Falling -->
+
+		<Action Name="Jumping" Type="Embedded" Class="com.group_finity.mascot.action.Jump"
+			VelocityParam="20">
+			<Animation>
+				<Pose Image="/shime22.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/jump.wav" Volume="1" />
+				<Pose Image="/shime22.png" ImageAnchor="102,198" Velocity="0,0" Duration="250" />
+			</Animation>
+		</Action>
+
+		<Action Name="Falling" Type="Embedded" Class="com.group_finity.mascot.action.Fall"
+			RegistanceX="0.05" RegistanceY="0.1" Gravity="2">
+			<Animation>
+				<Pose Image="/shime4.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/fall.wav" Volume="1" />
+				<Pose Image="/shime4.png" ImageAnchor="102,198" Velocity="0,0" Duration="250" />
+			</Animation>
+		</Action>
+
+		<Action Name="Bouncing" Type="Animate" BorderType="Floor">
+			<Animation>
+				<Pose Image="/shime18.png" ImageAnchor="102,198" Velocity="0,0" Duration="4" Sound="/ouch.wav" Volume= "1" />
+				<Pose Image="/shime19.png" ImageAnchor="102,198" Velocity="0,0" Duration="4" />
+				<Pose Image="/shime19-2.png" ImageAnchor="102,198" Velocity="0,0" Duration="4" />
+				<Pose Image="/shime1.png" ImageAnchor="102,198" Velocity="0,0" Duration="10" />
+			</Animation>
+		</Action>
+
+		<Action Name="Tripping" Type="Animate" BorderType="Floor">
+			<Animation>
+				<Pose Image="/shime19.png" ImageAnchor="102,198" Velocity="-8,0" Duration="8" />
+				<Pose Image="/shime18.png" ImageAnchor="102,198" Velocity="-4,0" Duration="4" />
+				<Pose Image="/shime20.png" ImageAnchor="102,198" Velocity="-2,0" Duration="4" />
+				<Pose Image="/shime20.png" ImageAnchor="102,198" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime19.png" ImageAnchor="102,104" Velocity="-4,0" Duration="4" />
+			</Animation>
+		</Action>
+
+
+		<!-- Dragging -->
+
+		<Action Name="Pinched" Type="Embedded" Class="com.group_finity.mascot.action.Dragged">
+			<Animation Condition="#{FootX &lt; mascot.environment.cursor.x-50}">
+				<Pose Image="/shime9.png" ImageAnchor="96,198" Velocity="0,0" Duration="1" Sound="/shake.wav" Volume="1"/>
+				<Pose Image="/shime9.png" ImageAnchor="96,198" Velocity="0,0" Duration="5" />
+			</Animation>
+			<Animation Condition="#{FootX &lt; mascot.environment.cursor.x-30}">
+				<Pose Image="/shime7.png" ImageAnchor="96,198" Velocity="0,0" Duration="5" />
+			</Animation>
+			<Animation Condition="#{FootX &lt; mascot.environment.cursor.x}">
+				<Pose Image="/shime5.png" ImageAnchor="96,198" Velocity="0,0" Duration="5" />
+			</Animation>
+			<Animation Condition="#{FootX &lt; mascot.environment.cursor.x+30}">
+				<Pose Image="/shime6.png" ImageAnchor="96,198" Velocity="0,0" Duration="5"/>
+			</Animation>
+			<Animation Condition="#{FootX &lt; mascot.environment.cursor.x+50}">
+				<Pose Image="/shime8.png" ImageAnchor="96,198" Velocity="0,0" Duration="5" />
+			</Animation>s
+			<Animation Condition="#{FootX &gt;= mascot.environment.cursor.x+30}">
+				<Pose Image="/shime10.png" ImageAnchor="96,198" Velocity="0,0" Duration="1" Sound="/shake.wav" Volume="1"/>
+				<Pose Image="/shime10.png" ImageAnchor="96,198" Velocity="0,0" Duration="5" />
+			</Animation>
+		</Action>
+		<Action Name="Resisting" Type="Embedded" Class="com.group_finity.mascot.action.Regist">
+			<Animation>
+				<Pose Image="/shime5.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime6.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime5.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime6.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime5.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime6.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime5.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime6.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime5.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime6.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime5.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime6.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime5.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime6.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime5.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime6.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime5.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime6.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime5.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime6.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime5.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime6.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime49-3.png" ImageAnchor="95,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime49-4.png" ImageAnchor="95,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime49.png" ImageAnchor="139,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime49-2.png" ImageAnchor="139,198" Velocity="0,0" Duration="100" />
+				<Pose Image="/shime49-5.png" ImageAnchor="139,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime49-6.png" ImageAnchor="139,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime49-5.png" ImageAnchor="139,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime49-2.png" ImageAnchor="139,198" Velocity="0,0" Duration="50" />
+				<Pose Image="/shime49-7.png" ImageAnchor="139,198" Velocity="0,0" Duration="5" />
+			</Animation>
+		</Action>
+
+	</ActionList>
+
+	<!-- Actual Behavior -->
+	<ActionList>
+
+		<!-- ALWAYS REQUIRED -->
+		<Action Name="Fall" Type="Sequence" Loop="false">
+			<ActionReference Name="Falling"/>
+			<Action Type="Select">
+				<Action Type="Sequence" Condition="${mascot.environment.floor.isOn(mascot.anchor) ||
+					mascot.environment.activeIE.topBorder.isOn(mascot.anchor) }">
+					<ActionReference Name="Bouncing"/>
+					<ActionReference Name="Stand" Duration="${100+Math.random()*100}" />
+				</Action>
+				<ActionReference Name="GrabWall" Duration="100" />
+			</Action>
+		</Action>
+
+		<!-- ALWAYS REQUIRED -->
+		<Action Name="Dragged" Type="Sequence" Loop="true">
+			<ActionReference Name="GrabKinito" />
+			<ActionReference Name="Pinched"/>
+			<ActionReference Name="Resisting" />
+		</Action>
+
+		<!-- ALWAYS REQUIRED -->
+		<Action Name="Thrown" Type="Sequence" Loop="false">
+			<ActionReference Name="Falling" InitialVX="${mascot.environment.cursor.dx}" InitialVY="${mascot.environment.cursor.dy}"/>
+			<Action Type="Select">
+				<Action Type="Sequence" Condition="${mascot.environment.floor.isOn(mascot.anchor) || mascot.environment.activeIE.topBorder.isOn(mascot.anchor) }">
+					<ActionReference Name="Bouncing"/>
+					<ActionReference Name="Stand" Duration="${100+Math.random()*100}" />
+				</Action>
+				<ActionReference Name="GrabWall" Duration="100" />
+			</Action>
+		</Action>
+
+		<Action Name="StandUp" Type="Sequence" Loop="false">
+			<ActionReference Name="Stand" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+		<Action Name="SitDown" Type="Sequence" Loop="false">
+			<ActionReference Name="Sit" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+        <Action Name="SitDownBlush" Type="Sequence" Loop="false">
+			<ActionReference Name="SitBlush" Duration="170" />
+		</Action>
+
+        <Action Name="LayDown" Type="Sequence" Loop="false">
+			<ActionReference Name="Lay" Duration="100" />
+		</Action>
+
+		<Action Name="Sleep" Type="Sequence" Loop="false">
+		    <ActionReference Name="Look" LookRight="false" />
+			<ActionReference Name="Sprawl" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+		<Action Name="ReadBook" Type="Sequence" Loop="false">
+			<ActionReference Name="SitWithLegsUp" Duration="10" />
+			<ActionReference Name="SitWithLegsDown" Duration="${100+Math.random()*100}" />
+			<ActionReference Name="SitWhileDangLegs" Duration="${500+Math.random()*100}" />
+			<ActionReference Name="SitWithLegsDown" Duration="${100+Math.random()*100}" />
+			<ActionReference Name="SitWithLegsUp" Duration="10" />
+		</Action>
+
+		<Action Name="HoldOntoWall" Type="Sequence" Loop="false">
+			<ActionReference Name="GrabWall" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+		<Action Name="FallFromWall" Type="Sequence" Loop="false">
+			<ActionReference Name="Offset" X="${mascot.lookRight ? -1 : 1}" />
+			<ActionReference Name="Stand" />
+		</Action>
+
+		<Action Name="HoldOntoCeiling" Type="Sequence" Loop="false">
+			<ActionReference Name="GrabCeiling" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+		<Action Name="FallFromCeiling" Type="Sequence" Loop="false">
+			<ActionReference Name="Offset" Y="1" />
+			<ActionReference Name="Stand" />
+		</Action>
+
+		<Action Name="WalkAlongWorkAreaFloor" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="${mascot.environment.workArea.left+64+Math.random()*(mascot.environment.workArea.width-128)}" />
+		</Action>
+
+		<Action Name="RunAlongWorkAreaFloor" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="${mascot.environment.workArea.left+64+Math.random()*(mascot.environment.workArea.width-128)}" />
+		</Action>
+
+		<Action Name="Popup" Type="Sequence" Loop="false">
+			<ActionReference Name="Look" LookRight="false"/>
+			<ActionReference Name="Ad" />
+		</Action>
+
+		<Action Name="WalkLeftAlongFloorAndSit" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="${mascot.environment.workArea.left+100+Math.random()*300}" />
+			<ActionReference Name="Stand" Duration="${20+Math.random()*20}" />
+			<ActionReference Name="Sit" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+		<Action Name="WalkRightAlongFloorAndSit" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="${mascot.environment.workArea.right-100-Math.random()*300}" />
+			<ActionReference Name="Stand" Duration="${20+Math.random()*20}" />
+			<ActionReference Name="Sit" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+		<Action Name="GrabWorkAreaBottomLeftWall" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="#{mascot.environment.workArea.left}" />
+			<ActionReference Name="ClimbWall" TargetY="#{mascot.environment.workArea.bottom-64}" />
+		</Action>
+
+		<Action Name="GrabWorkAreaBottomRightWall" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="#{mascot.environment.workArea.right}" />
+			<ActionReference Name="ClimbWall" TargetY="#{mascot.environment.workArea.bottom-64}" />
+		</Action>
+
+		<Action Name="WalkLeftAndSit" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="${mascot.environment.workArea.left+100+Math.random()*300}" />
+			<ActionReference Name="Stand" Duration="${20+Math.random()*20}" />
+			<ActionReference Name="Sit" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+		<Action Name="WalkRightAndSit" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="${mascot.environment.workArea.right-100-Math.random()*300}" />
+			<ActionReference Name="Stand" Duration="${20+Math.random()*20}" />
+			<ActionReference Name="Sit" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+		<Action Name="WalkAndGrabBottomLeftWall" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="#{mascot.environment.workArea.left}" />
+			<ActionReference Name="ClimbWall" TargetY="#{mascot.environment.workArea.bottom-64}" />
+		</Action>
+
+		<Action Name="WalkAndGrabBottomRightWall" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="#{mascot.environment.workArea.right}" />
+			<ActionReference Name="ClimbWall" TargetY="#{mascot.environment.workArea.bottom-64}" />
+		</Action>
+
+		<Action Name="JumpFromBottomOfIE" Type="Sequence" Loop="false">
+			<ActionReference Name="Jumping" TargetX="${(mascot.anchor.x*3+mascot.environment.activeIE.left+Math.random()*mascot.environment.activeIE.width)/4}"
+				 TargetY="${mascot.environment.activeIE.bottom}" />
+			<ActionReference Name="GrabCeiling" Duration="${100+Math.random()*100}" />
+		</Action>
+
+		<Action Name="ClimbHalfwayAlongWall" Type="Sequence" Loop="false">
+			<ActionReference Name="ClimbWall" TargetY="${mascot.environment.workArea.top+64 + Math.random()*(mascot.environment.workArea.height-128)}" />
+		</Action>
+
+		<Action Name="ClimbAlongWall" Type="Sequence" Loop="false">
+			<ActionReference Name="ClimbWall" TargetY="#{mascot.environment.workArea.top+64}" />
+			<ActionReference Name="Offset" Y="-64" />
+			<ActionReference Name="Look" />
+			<ActionReference Name="ClimbCeiling" TargetX="${mascot.lookRight ? mascot.environment.workArea.left+Math.random()*100 : mascot.environment.workArea.right-Math.random*100}" />
+		</Action>
+
+		<Action Name="ClimbAlongCeiling" Type="Sequence" Loop="false">
+			<ActionReference Name="ClimbCeiling" TargetX="${mascot.environment.workArea.left+64+Math.random()*(mascot.environment.workArea.width-128)}" />
+		</Action>
+
+		<Action Name="WalkAlongIECeiling" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="${mascot.environment.activeIE.left+64+Math.random()*(mascot.environment.activeIE.width-128)}" />
+		</Action>
+
+		<Action Name="RunAlongIECeiling" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="${mascot.environment.activeIE.left+64+Math.random()*(mascot.environment.activeIE.width-128)}" />
+		</Action>
+
+		<Action Name="PopupIECeiling" Type="Sequence" Loop="false">
+			<ActionReference Name="Ad" />
+		</Action>
+
+		<Action Name="SitOnTheLeftEdgeOfIE" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="${mascot.environment.activeIE.left+100+Math.random()*300}" />
+			<ActionReference Name="Stand" Duration="${100+Math.random()*100}" />
+			<ActionReference Name="Sit" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+		<Action Name="SitOnTheRightEdgeOfIE" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="${mascot.environment.activeIE.right-100-Math.random()*300}" />
+			<ActionReference Name="Stand" Duration="${100+Math.random()*100}" />
+			<ActionReference Name="Sit" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+		<Action Name="JumpFromLeftEdgeOfIE" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="${mascot.environment.activeIE.left+Math.random()*50}" />
+			<ActionReference Name="Stand" Duration="${50+Math.random()*50}" />
+			<ActionReference Name="Falling" InitialVX="${-15-Math.random()*5}" InitialVY="${-20-Math.random()*5}"/>
+			<ActionReference Name="Bouncing" />
+		</Action>
+
+		<Action Name="JumpFromRightEdgeOfIE" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="${mascot.environment.activeIE.right-Math.random()*50}" />
+			<ActionReference Name="Stand" Duration="${50+Math.random()*50}" />
+			<ActionReference Name="Falling" InitialVX="${15+Math.random()*5}" InitialVY="${-20-Math.random()*5}"/>
+			<ActionReference Name="Bouncing" />
+		</Action>
+
+		<Action Name="WalkLeftAlongIEAndSit" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="${mascot.environment.activeIE.left+100+Math.random()*300}" />
+			<ActionReference Name="Stand" Duration="${100+Math.random()*100}" />
+			<ActionReference Name="Sit" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+		<Action Name="WalkRightAlongIEAndSit" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="${mascot.environment.activeIE.right-100-Math.random()*300}" />
+			<ActionReference Name="Stand" Duration="${100+Math.random()*100}" />
+			<ActionReference Name="Sit" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+		<Action Name="WalkLeftAlongIEAndJump" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="${mascot.environment.activeIE.left+Math.random()*50}" />
+			<ActionReference Name="Falling" InitialVX="${-15-Math.random()*5}" InitialVY="${-20-Math.random()*5}"/>
+			<ActionReference Name="Bouncing" />
+		</Action>
+
+		<Action Name="WalkRightAlongIEAndJump" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="${mascot.environment.activeIE.right-Math.random()*50}" />
+			<ActionReference Name="Falling" InitialVX="${15+Math.random()*5}" InitialVY="${-20-Math.random()*5}"/>
+			<ActionReference Name="Bouncing" />
+		</Action>
+
+		<Action Name="DashIeCeilingLeftEdgeFromJump" Type="Sequence" Loop="false">
+			<ActionReference Name="Dash" TargetX="${mascot.environment.activeIE.left+Math.random()*20+20}" />
+			<ActionReference Name="Falling" InitialVX="${-5-Math.random()*2}" InitialVY="${-20-Math.random()*5}"/>
+			<ActionReference Name="Bouncing" />
+		</Action>
+
+		<Action Name="DashIeCeilingRightEdgeFromJump" Type="Sequence" Loop="false">
+			<ActionReference Name="Dash" TargetX="${mascot.environment.activeIE.right-Math.random()*20-20}" />
+			<ActionReference Name="Falling" InitialVX="${5+Math.random()*2}" InitialVY="${-20-Math.random()*5}"/>
+			<ActionReference Name="Bouncing" />
+		</Action>
+
+		<Action Name="HoldOntoIEWall" Type="Sequence" Loop="false">
+			<ActionReference Name="ClimbWall" TargetY="${mascot.environment.activeIE.top+64 + Math.random()*(mascot.environment.activeIE.height-128)}" />
+		</Action>
+
+		<Action Name="ClimbIEWall" Type="Sequence" Loop="false">
+			<ActionReference Name="ClimbWall" TargetY="#{mascot.environment.activeIE.top+64}" />
+			<ActionReference Name="Offset" Y="-64" />
+			<ActionReference Name="Sit" Duration="5" />
+			<ActionReference Name="Stand" Duration="${10+Math.random()*10}" />
+			<ActionReference Name="Walk" TargetX="${mascot.lookRight ? mascot.environment.activeIE.left+Math.random()*100 : mascot.environment.activeIE.right-Math.random*100}" />
+		</Action>
+
+		<Action Name="ClimbIEBottom" Type="Sequence" Loop="false">
+			<ActionReference Name="ClimbCeiling" TargetX="${mascot.environment.activeIE.left+64+(Math.random()*mascot.environment.activeIE.width-128)}" />
+		</Action>
+
+		<Action Name="GrabIEBottomLeftWall" Type="Sequence" Loop="false">
+			<ActionReference Name="ClimbCeiling" TargetX="#{mascot.environment.activeIE.left}" />
+			<ActionReference Name="Look" />
+			<ActionReference Name="ClimbWall" TargetY="#{mascot.environment.activeIE.bottom-64}" />
+		</Action>
+
+		<Action Name="GrabIEBottomRightWall" Type="Sequence" Loop="false">
+			<ActionReference Name="ClimbCeiling" TargetX="#{mascot.environment.activeIE.right}" />
+			<ActionReference Name="Look" />
+			<ActionReference Name="ClimbWall" TargetY="#{mascot.environment.activeIE.bottom-64}" />
+		</Action>
+
+		<Action Name="JumpFromLeftWall" Type="Sequence" Loop="false">
+			<ActionReference Name="Jumping" TargetX="${mascot.environment.workArea.left}" TargetY="${mascot.environment.workArea.bottom-Math.random()*mascot.environment.workArea.height/4}" />
+			<ActionReference Name="GrabWall" Duration="${100+Math.random()*100}" />
+		</Action>
+
+		<Action Name="JumpFromRightWall" Type="Sequence" Loop="false">
+			<ActionReference Name="Jumping" TargetX="${mascot.environment.workArea.right}" TargetY="${mascot.environment.workArea.bottom-Math.random()*mascot.environment.workArea.height/4}" />
+			<ActionReference Name="GrabWall" Duration="${100+Math.random()*100}" />
+		</Action>
+
+		<Action Name="JumpOnIELeftWall" Type="Sequence" Loop="false">
+			<ActionReference Name="Jumping" TargetX="${mascot.environment.activeIE.left}" TargetY="${mascot.environment.activeIE.bottom-Math.random()*mascot.environment.activeIE.height/4}" />
+			<ActionReference Name="GrabWall" Duration="${100+Math.random()*100}" />
+		</Action>
+
+		<Action Name="JumpOnIERightWall" Type="Sequence" Loop="false">
+			<ActionReference Name="Jumping" TargetX="${mascot.environment.activeIE.right}" TargetY="${mascot.environment.activeIE.bottom-Math.random()*mascot.environment.activeIE.height/4}" />
+			<ActionReference Name="GrabWall" Duration="${100+Math.random()*100}" />
+		</Action>
+
+		<Action Name="ThrowIEFromLeft" Type="Sequence" Loop="false">
+			<ActionReference Name="Jumping" TargetX="${mascot.environment.activeIE.left}" TargetY="${mascot.environment.activeIE.bottom+64}" />
+			<ActionReference Name="FallWithIe" />
+			<ActionReference Name="WalkWithIe" TargetX="#{mascot.environment.workArea.right-400}" />
+			<ActionReference Name="ThrowIe" />
+			<ActionReference Name="Stand" Duration="${50+Math.random()*50}" />
+			<ActionReference Name="Look" />
+			<ActionReference Name="Stand" Duration="${50+Math.random()*50}" />
+		</Action>
+		<Action Name="ThrowIEFromRight" Type="Sequence" Loop="false">
+			<ActionReference Name="Jumping" TargetX="${mascot.environment.activeIE.right}" TargetY="${mascot.environment.activeIE.bottom+64}" />
+			<ActionReference Name="FallWithIe" />
+			<ActionReference Name="WalkWithIe" TargetX="#{mascot.environment.workArea.left+400}" />
+			<ActionReference Name="ThrowIe" />
+			<ActionReference Name="Stand" Duration="${50+Math.random()*50}" />
+			<ActionReference Name="Look" />
+			<ActionReference Name="Stand" Duration="${50+Math.random()*50}" />
+		</Action>
+		<Action Name="WalkAndThrowIEFromRight" Type="Sequence" Loop="false">
+			<ActionReference Name="Jumping" TargetX="${mascot.environment.activeIE.left}" TargetY="${mascot.environment.activeIE.bottom+64}" />
+			<ActionReference Name="FallWithIe" />
+			<ActionReference Name="RunWithIe" TargetX="#{mascot.environment.workArea.right-400}" />
+			<ActionReference Name="ThrowIe" />
+			<ActionReference Name="Stand" Duration="${50+Math.random()*50}" />
+			<ActionReference Name="Look" />
+			<ActionReference Name="Stand" Duration="${50+Math.random()*50}" />
+		</Action>
+		<Action Name="WalkAndThrowIEFromLeft" Type="Sequence" Loop="false">
+			<ActionReference Name="Jumping" TargetX="${mascot.environment.activeIE.right}" TargetY="${mascot.environment.activeIE.bottom+64}" />
+			<ActionReference Name="FallWithIe" />
+			<ActionReference Name="RunWithIe" TargetX="#{mascot.environment.workArea.left+400}" />
+			<ActionReference Name="ThrowIe" />
+			<ActionReference Name="Stand" Duration="${50+Math.random()*50}" />
+			<ActionReference Name="Look" />
+			<ActionReference Name="Stand" Duration="${50+Math.random()*50}" />
+		</Action>
+
+		<Action Name="ChaseMouse" Type="Sequence" Loop="false">
+			<Action Type="Sequence" Condition="${mascot.environment.ceiling.isOn(mascot.anchor) || mascot.environment.activeIE.bottomBorder.isOn(mascot.anchor)}">
+				<ActionReference Name="Offset" Y="1" />
+				<ActionReference Name="Falling"/>
+				<ActionReference Name="Bouncing" Duration="12" />
+			</Action>
+			<Action Type="Sequence" Condition="${mascot.environment.workArea.leftBorder.isOn(mascot.anchor) || mascot.environment.activeIE.rightBorder.isOn(mascot.anchor)}">
+				<ActionReference Name="Offset" X="1" />
+				<ActionReference Name="Falling"/>
+				<ActionReference Name="Bouncing" Duration="12"/>
+			</Action>
+			<Action Type="Sequence" Condition="${mascot.environment.workArea.rightBorder.isOn(mascot.anchor) || mascot.environment.activeIE.leftBorder.isOn(mascot.anchor)}">
+				<ActionReference Name="Offset" X="-1" />
+				<ActionReference Name="Falling"/>
+				<ActionReference Name="Bouncing" Duration="12"/>
+			</Action>
+			<Action Type="Select">
+				<ActionReference Name="DashIeCeilingLeftEdgeFromJump"
+					Condition="${mascot.environment.activeIE.topBorder.isOn(mascot.anchor) &amp;&amp;
+					mascot.anchor.x &lt; (mascot.environment.activeIE.left+mascot.environment.activeIE.right)/2}"/>
+				<ActionReference Name="DashIeCeilingRightEdgeFromJump"
+					Condition="${mascot.environment.activeIE.topBorder.isOn(mascot.anchor) &amp;&amp;
+					mascot.anchor.x &gt;= (mascot.environment.activeIE.left+mascot.environment.activeIE.right)/2}" />
+			</Action>
+			<ActionReference Name="ChaseTheMouse" TargetX="${ mascot.anchor.x+(mascot.environment.cursor.x-mascot.anchor.x)*Math.random()/2 }" />
+			<ActionReference Name="Tripping" Condition="${Math.random() &lt; 0.05}" />
+			<ActionReference Name="ChaseTheMouse" TargetX="${ mascot.anchor.x+(mascot.environment.cursor.x-mascot.anchor.x)*Math.random() }" />
+			<ActionReference Name="Tripping" Condition="${Math.random() &lt; 0.05}" />
+			<ActionReference Name="ChaseTheMouse" TargetX="#{mascot.environment.cursor.x+Gap}"
+				Gap="${ mascot.anchor.x &lt; mascot.environment.cursor.x ?
+					-Math.min( mascot.environment.cursor.x-mascot.anchor.x, Math.random()*200) :
+					Math.min( mascot.anchor.x-mascot.environment.cursor.x, Math.random()*200 ) }" />
+			<ActionReference Name="Look" LookRight="${mascot.anchor.x &lt; mascot.environment.cursor.x}" />
+		</Action>
+
+		<Action Name="SitAndFaceMouse" Type="Sequence" Loop="false">
+			<ActionReference Name="SitAndLookAtMouse" Duration="${10+Math.random()*10}" />
+			<ActionReference Name="Look" LookRight="${mascot.anchor.x &lt; mascot.environment.cursor.x}" />
+			<ActionReference Name="SitAndLookAtMouse" Duration="${10+Math.random()*10}" />
+			<ActionReference Name="Look" LookRight="${mascot.anchor.x &lt; mascot.environment.cursor.x}" />
+			<ActionReference Name="SitAndLookAtMouse" Duration="${10+Math.random()*10}" />
+			<ActionReference Name="Look" LookRight="${mascot.anchor.x &lt; mascot.environment.cursor.x}" />
+			<ActionReference Name="SitAndLookAtMouse" Duration="${10+Math.random()*10}" />
+			<ActionReference Name="Look" LookRight="${mascot.anchor.x &lt; mascot.environment.cursor.x}" />
+			<ActionReference Name="SitAndLookAtMouse" Duration="${10+Math.random()*10}" />
+			<ActionReference Name="Look" LookRight="${mascot.anchor.x &lt; mascot.environment.cursor.x}" />
+			<ActionReference Name="SitAndLookAtMouse" Duration="${10+Math.random()*10}" />
+			<ActionReference Name="Look" LookRight="${mascot.anchor.x &lt; mascot.environment.cursor.x}" />
+			<ActionReference Name="SitAndLookAtMouse" Duration="${10+Math.random()*10}" />
+			<ActionReference Name="Look" LookRight="${mascot.anchor.x &lt; mascot.environment.cursor.x}" />
+			<ActionReference Name="SitAndLookAtMouse" Duration="${10+Math.random()*10}" />
+			<ActionReference Name="Look" LookRight="${mascot.anchor.x &lt; mascot.environment.cursor.x}" />
+			<ActionReference Name="SitAndLookAtMouse" Duration="${10+Math.random()*10}" />
+			<ActionReference Name="Look" LookRight="${mascot.anchor.x &lt; mascot.environment.cursor.x}" />
+			<ActionReference Name="SitAndLookAtMouse" Duration="${10+Math.random()*10}" />
+
+			<ActionReference Name="Look" LookRight="${mascot.anchor.x &lt; mascot.environment.cursor.x}" />
+			
+		</Action>
+		<Action Name="Trick" Type="Sequence" Loop="false">
+			<ActionReference Name="Showtime" />
+		</Action>
+
+		<Action Name="PullUpShimeji1" Type="Embedded" Class="com.group_finity.mascot.action.Breed"
+			BornX="-32" BornY="0" BornBehavior="PullUp">
+			<Animation>
+				<Pose Image="/shime87.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/open_box.wav" Volume= "1" />
+				<Pose Image="/shime88.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime89.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime90.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime89.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime90.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime91.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime92.png" ImageAnchor="102,198" Velocity="0,0" Duration="20" />
+				<Pose Image="/shime93.png" ImageAnchor="102,198" Velocity="0,0" Duration="10" />
+				<Pose Image="/shime92.png" ImageAnchor="102,198" Velocity="0,0" Duration="8" />
+				<Pose Image="/shime94.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime92.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime95.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime92.png" ImageAnchor="102,198" Velocity="0,0" Duration="5" />
+				<Pose Image="/shime94.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime92.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime95.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime92.png" ImageAnchor="102,198" Velocity="0,0" Duration="15" />
+				<Pose Image="/shime96.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/egg.wav" Volume= "1"/>
+				<Pose Image="/shime97.png" ImageAnchor="102,198" Velocity="0,0" Duration="15" />
+				<Pose Image="/shime98.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" Sound="/egg_open.wav" Volume= "1"/>
+				<Pose Image="/shime99.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime100.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+		<Action Name="PullUpShimeji2" Type="Animate">
+			<Animation>
+				<Pose Image="/shime9.png" ImageAnchor="96,198" Velocity="20,-20" Duration="1" />
+				<Pose Image="/shime9.png" ImageAnchor="96,198" Velocity="20,-10" Duration="1" />
+				<Pose Image="/shime9.png" ImageAnchor="96,198" Velocity="20,-5" Duration="1" />
+			</Animation>
+		</Action>
+		<Action Name="SpawnAnotherKinito" Type="Sequence">
+			<ActionReference Name="Offset" X="${mascot.lookRight ? -7 : 0}" />
+			<ActionReference Name="PullUpShimeji1" />
+			<ActionReference Name="Offset" X="${mascot.lookRight ? -102 : 102}" />
+			<ActionReference Name="PullUpShimeji2" />
+			<ActionReference Name="Falling"  InitialVX="${mascot.lookRight ? -5 : 5}" />
+			<ActionReference Name="Bouncing" />
+		</Action>
+
+		<Action Name="PullUp" Type="Sequence">
+			<ActionReference Name="Falling" InitialVX="${mascot.lookRight ? 20 : -20}" InitialVY="-5"/>
+			<ActionReference Name="Bouncing" />
+		</Action>
+		<Action Name="Divide1" Type="Embedded" Class="com.group_finity.mascot.action.Breed"
+			BornX="-16" BornY="0" BornBehavior="Divided">
+			<Animation>
+				<Pose Image="/shime38.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" Sound="/glitch.wav" Volume="1" />
+				<Pose Image="/shime39.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime40.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime41.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime42.png" ImageAnchor="102,198" Velocity="0,0" Duration="6" />
+				<Pose Image="/shime41.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime42.png" ImageAnchor="102,198" Velocity="0,0" Duration="4" />
+				<Pose Image="/shime43.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime44.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" Sound="/error.wav" Volume="1"/>
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="3" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="2" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime45.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+				<Pose Image="/shime46.png" ImageAnchor="102,198" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+		<Action Name="MultiplyKinito" Type="Sequence">
+			<ActionReference Name="Look" LookRight="false" />
+			<ActionReference Name="Divide1" />
+			<ActionReference Name="Offset" X="16" />
+			<ActionReference Name="Look" />
+			<ActionReference Name="Divided" />
+		</Action>
+		<Action Name="Divided" Type="Sequence">
+		    <ActionReference Name="PullUpShimeji2" />
+			<ActionReference Name="Falling" InitialVX="${mascot.lookRight ? -20 : 20}" InitialVY="-40"/>
+			<ActionReference Name="Bouncing" Duration="12"/>
+			<ActionReference Name="LayDown" Duration="40" />
+		</Action>
+
+		<Action Name="KinitoPetURL" Type="OpenURL" URL="https://www.kinitopet.com/">
+			<ActionReference Name="KinitoURL" />
+		</Action>
+
+		<Action Name="OpenYTURL" Type="OpenURL" URL="https://www.kinitopet.com/">
+			<ActionReference Name="NoAd" />
+		</Action>
+
+		<Action Name="CloseWindow" Type="Sequence" Loop="false">
+			<ActionReference Name="NoAd" />
+		</Action>
+
+		<Action Name="OpenCMD" Type="Sequence">
+            <ActionReference Name="Run" TargetX="${mascot.environment.workArea.left+mascot.environment.workArea.width/2}" />
+            <ActionReference Name="Look" LookRight="false" />
+            <ActionReference Name="GiveAccess" />
+            <ActionReference Name="KinitoWaitsForAccess" /> 
+        </Action>
+
+        <Action Name="Access" Type="Sequence" Loop="True">
+			<ActionReference Name="KinitoWaitsForAccess" />
+		</Action> 
+
+		<Action Name="CloseCMD" Type="Sequence">
+		    <ActionReference Name="NoAccess" Duration="220"/>
+		</Action> 
+
+		<Action Name="HowWasYourDay" Type="Sequence">
+            <ActionReference Name="Look" LookRight="false" />
+            <ActionReference Name="KinitoAsksForYourDay" />
+            <ActionReference Name="AnswerHowYourDayWas" /> 
+        </Action>
+
+		<Action Name="AnswerDay" Type="Sequence" Loop="True">
+			<ActionReference Name="AnswerHowYourDayWas" />
+		</Action> 
+
+		<Action Name="DayWasGood" Type="Sequence">
+			<ActionReference Name="DayGood" />
+		</Action>
+
+		<Action Name="DayWasBad" Type="Sequence">
+			<ActionReference Name="DayBad" />
+		</Action>
+
+		<Action Name="DayWasMeh" Type="Sequence">
+			<ActionReference Name="DayMeh" />
+		</Action>
+
+		<Action Name="StopMoving" Type="Sequence">
+		    <ActionReference Name="Stop"/>
+		</Action> 
+	</ActionList>
+
+</Mascot>
